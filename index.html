@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foods Gallery</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image//x-icon">
 
     <!-- Tailwind & Daisy UI link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
@@ -30,14 +31,17 @@
     <style>
         .font-lato {
             font-family: 'Lato', sans-serif;
+            margin-left: 240px;
+            margin-right: 240px;
         }
+    
     </style>
 
 </head>
 
 <body class="font-lato">
     <header class="container mx-auto">
-        <nav class=" mt-12 ">
+        <!-- <nav class=" mt-12 ">
             <div class="navbar bg-base-100 rounded-full bg-red-600 p-5">
                 <div class="flex-1">
                     <div class=" space-x-11 color">
@@ -47,7 +51,7 @@
                         <a>All Fruits</a>
                     </div>
                     <div class="logo-text inline-flex justify-between ml-64 align-middle">
-                        <img src="images/logo.png" alt="">
+                        <img class="w-[40px]" src="images/logo.png" alt="">
                         <p class="font-bold text-4xl">Fruit Burst</p>
                     </div>
                 </div>
@@ -67,52 +71,97 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav> -->
+
+
+
+        <!-- new nav -->
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <div class="flex-wrap">
+                  <a>Home</a>
+                  <a>About Us</a>
+                  <a>Shop</a>
+                  <a>All Fruits</a>
+              </div>
+              </ul>
+            </div>
+            <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <div class="flex justify-between">
+                        <a>Home</a>
+                        <a>About Us</a>
+                        <a>Shop</a>
+                        <a>All Fruits</a>
+                    </div>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn">Button</a>
+          </div>
+        </div>
 
     </header>
     <main>
-        <!-- Banner Section -->
-        <section>
-            <div class="carousel w-full h-[550px] p-10">
-                <div id="slide1" class="carousel-item relative w-1/2">
-                  <img src="/images/banner1.png" class="w-fit" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4 "class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="/images/banner2.png" class="w-fit" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="/images/banner3.png" class="w-fit" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="/images/banner4.png" class="w-fit" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
+        <!--Carousel Section-->
+        <section><div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/banner1.png" class="w-full" />
+             <div class="absolute rounded-lg flex items-center transform h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21)]">
+              <div class="hero-content text-center text-neutral-content lg:mx-[450px]">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                  <p class="mb-5">We supply highly quality organic products</p>
+                  <button class="btn btn-primary">Shop Now</button>
                 </div>
               </div>
+      
+      
+          </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/banner2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="images/banner4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
         </section>
 
 
 
 
         <!-- Display product With Price & Rating -->
-        <section>
+        <section class="w-auto">
         <!-- Text area -->
-        <div class="Main-text-div flex-1">
-          <div class="mt-35 ml-60">
+        <div class="Main-text-div flex justify-between">
+          <div class="mt-35">
             <h2 class="font-bold text-4xl text-black">Deal of the day</h2>
             <p class="mt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
               <br>
@@ -120,7 +169,7 @@
           </div>
 
           <!-- time -->
-            <div class="flex gap-5">
+            <div class="flex gap-5 ">
               <div>
                 <span class="countdown font-mono text-4xl">
                   <span style="--value:15;"></span>
@@ -152,7 +201,7 @@
 
 
         <!-- Price & Rating area -->
-        <div class="main-div flex-1 ml-60 mt-12">
+        <div class="flex justify-between">
 
           <div class="card w-96 bg-white shadow-xl ">
             <figure><img src="/images/fruit6.png" alt="Apple" /></figure>
@@ -168,7 +217,7 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
-              <div class="card-actions justify-end">
+                <div class="card-actions justify-end">
                  
                 <div class="badge badge-outline">Details</div>
               </div>
@@ -196,6 +245,7 @@
                 <div class="badge badge-outline">Details</div>
               </div>
             </div>
+            </div>
             <!-- third div -->
             <div class="card w-96 bg-white shadow-xl">
               <figure><img src="/images/fruit8.png" alt="Red Dragon" /></figure>
@@ -216,6 +266,7 @@
                   <div class="badge badge-outline">Details</div>
                 </div>
               </div>
+              </div>
               <!-- 4th div -->
               <div class="card w-96 bg-white shadow-xl">
                 <figure><img src="/images/fruit9.png" alt="Banana" /></figure>
@@ -232,13 +283,13 @@
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                   </div>
                   <div class="card-actions justify-end">
-                     
                     <div class="badge badge-outline">Details</div>
                   </div>
                 </div>
            </div>
+        </div>
            
-           <button class="btn btn-error mt-6 justify-center">Shop All</button>
+           
         </section>
       </main>
 <!-- Footer & Last Section -->
