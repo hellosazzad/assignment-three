@@ -109,11 +109,55 @@
 
 
         <!-- Display product With Price & Rating -->
-        <div class="main-div flex-1">
-          <div class="card w-96 bg-white shadow-xl">
+        <section>
+        <!-- Text area -->
+        <div class="Main-text-div flex-1">
+          <div class="mt-35 ml-60">
+            <h2 class="font-bold text-4xl text-black">Deal of the day</h2>
+            <p class="mt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+              <br>
+            Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+
+          <!-- time -->
+            <div class="flex gap-5">
+              <div>
+                <span class="countdown font-mono text-4xl">
+                  <span style="--value:15;"></span>
+                </span>
+                days
+              </div> 
+              <div>
+                <span class="countdown font-mono text-4xl">
+                  <span style="--value:10;"></span>
+                </span>
+                hours
+              </div> 
+              <div>
+                <span class="countdown font-mono text-4xl">
+                  <span style="--value:24;"></span>
+                </span>
+                min
+              </div> 
+              <div>
+                <span class="countdown font-mono text-4xl">
+                  <span style="--value:41;"></span>
+                </span>
+                sec
+              </div>
+          
+          </div>
+
+        </div>
+
+
+        <!-- Price & Rating area -->
+        <div class="main-div flex-1 ml-60 mt-12">
+
+          <div class="card w-96 bg-white shadow-xl ">
             <figure><img src="/images/fruit6.png" alt="Apple" /></figure>
             <div class="card-body">
-              <h2 class="card-title ">
+              <h2 class="card-title justify-center">
                 12.90$ - 18.85$
               </h2>
               <div class="badge badge-secondary flex-col">Apples</div>
@@ -130,13 +174,13 @@
               </div>
             </div>
           </div>
-<!-- flex div -->
-          <div>
-            <!-- 2nd div -->
+
+          
+          <!-- 2nd div -->
           <div class="card w-96 bg-white shadow-xl">
             <figure><img src="/images/fruit7.png" alt="Orange" /></figure>
             <div class="card-body">
-              <h2 class="card-title ">
+              <h2 class="card-title justify-center">
                 12.90$ - 18.85$
               </h2>
               <div class="badge badge-secondary flex-col">Orange</div>
@@ -156,7 +200,7 @@
             <div class="card w-96 bg-white shadow-xl">
               <figure><img src="/images/fruit8.png" alt="Red Dragon" /></figure>
               <div class="card-body">
-                <h2 class="card-title ">
+                <h2 class="card-title justify-center">
                   12.90$ - 18.85$
                 </h2>
                 <div class="badge badge-secondary flex-col">Red Dragon</div>
@@ -176,7 +220,7 @@
               <div class="card w-96 bg-white shadow-xl">
                 <figure><img src="/images/fruit9.png" alt="Banana" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title ">
+                  <h2 class="card-title justify-center">
                     12.90$ - 18.85$
                   </h2>
                   <div class="badge badge-secondary flex-col">Banana</div>
@@ -192,22 +236,17 @@
                     <div class="badge badge-outline">Details</div>
                   </div>
                 </div>
-
-          </div>
-          
-
-
-        </div>
-
-    </main>
-
-
+           </div>
+           
+           <button class="btn btn-error mt-6 justify-center">Shop All</button>
+        </section>
+      </main>
 <!-- Footer & Last Section -->
 
 
     <footer>
         <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
-            <div class="inline-flex justify-between ml-10 mt-5 align-middle">
+            <div class="inline-flex mt-5  justify-center">
               <img src="images/logo.png" alt="">
               <p class="font-bold text-4xl">Fruit Burst</p>
           </div>
